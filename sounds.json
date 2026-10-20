@@ -1,0 +1,10 @@
+{
+  "pins": [
+    { "id": "p1", "label": "駅前", "file": "station.wav", "x": 0.41, "y": 0.40, "gain": 1 },
+    { "id": "p2", "label": "竹下通り", "file": "takeshita.wav", "x": 0.45, "y": 0.28, "gain": 1 },
+    { "id": "p3", "label": "交差点", "file": "crossing.wav", "x": 0.55, "y": 0.51, "gain": 1 },
+    { "id": "p4", "label": "神宮の森", "file": "forest.wav", "x": 0.18, "y": 0.22, "gain": 1 },
+    { "id": "p5", "label": "公園", "file": "park.wav", "x": 0.15, "y": 0.70, "gain": 1 },
+    { "id": "p6", "label": "裏通り", "file": "catstreet.wav", "x": 0.62, "y": 0.66, "gain": 1 }
+  ]
+}

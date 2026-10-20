@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" font-family="-apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <!-- 原宿周辺の簡略地図（概略。縮尺・位置は厳密ではありません） -->
+  <rect width="1000" height="750" fill="#efece4"/>
+
+  <!-- 緑地 -->
+  <path d="M0 0 H330 Q370 120 300 230 Q220 300 0 290 Z" fill="#cfe3c4"/>
+  <text x="120" y="130" font-size="26" fill="#4a6a3f">明治神宮</text>
+  <path d="M0 320 Q200 330 280 400 Q300 520 220 600 Q120 680 0 650 Z" fill="#d6e8c9"/>
+  <text x="70" y="500" font-size="26" fill="#4a6a3f">代々木公園</text>
+
+  <!-- JR 線路 -->
+  <path d="M330 0 Q345 200 340 380 Q335 560 350 750" stroke="#9a9a9a" stroke-width="14" fill="none"/>
+  <path d="M330 0 Q345 200 340 380 Q335 560 350 750" stroke="#f4f1ea" stroke-width="4" stroke-dasharray="18 18" fill="none"/>
+
+  <!-- 道路 -->
+  <path d="M520 0 V750" stroke="#fff" stroke-width="34" fill="none"/>
+  <path d="M520 0 V750" stroke="#c9c4b8" stroke-width="36" fill="none" opacity=".35"/>
+  <text x="535" y="90" font-size="20" fill="#555" transform="rotate(90 535 90)">明治通り</text>
+
+  <path d="M360 330 L1000 480" stroke="#fff" stroke-width="30" fill="none"/>
+  <text x="640" y="385" font-size="20" fill="#555" transform="rotate(13 640 385)">表参道</text>
+
+  <path d="M360 235 L520 215" stroke="#fff" stroke-width="18" fill="none"/>
+  <text x="400" y="222" font-size="17" fill="#555" transform="rotate(-7 400 222)">竹下通り</text>
+
+  <path d="M440 300 Q560 330 600 440 Q620 520 700 600" stroke="#fff" stroke-width="14" fill="none"/>
+  <text x="620" y="520" font-size="16" fill="#555" transform="rotate(50 620 520)">キャットストリート</text>
+
+  <path d="M700 0 V750" stroke="#fff" stroke-width="12" fill="none"/>
+  <path d="M520 600 H1000" stroke="#fff" stroke-width="14" fill="none"/>
+
+  <!-- 交差点 -->
+  <circle cx="520" cy="368" r="8" fill="#bbb"/>
+  <text x="540" y="350" font-size="15" fill="#666">神宮前交差点</text>
+
+  <!-- 駅 -->
+  <rect x="312" y="250" width="56" height="80" rx="6" fill="#fff" stroke="#777" stroke-width="3"/>
+  <text x="340" y="298" font-size="18" text-anchor="middle" fill="#333">原宿</text>
+  <text x="340" y="345" font-size="13" text-anchor="middle" fill="#666">JR原宿駅</text>
+  <rect x="505" y="330" width="30" height="30" rx="4" fill="#fff" stroke="#777" stroke-width="3"/>
+  <text x="560" y="325" font-size="13" fill="#666">明治神宮前駅</text>
+
+  <!-- 方位 -->
+  <g transform="translate(940 60)">
+    <circle r="22" fill="#fff" stroke="#999" stroke-width="2"/>
+    <path d="M0 -16 L7 6 L0 2 L-7 6 Z" fill="#333"/>
+    <text y="40" font-size="14" text-anchor="middle" fill="#666">N</text>
+  </g>
+</svg>
