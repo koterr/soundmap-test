@@ -22,15 +22,15 @@ function isFileProtocol() {
   return window.location.protocol === "file:";
 }
 
-function requireHttpServer() {
+function showStaticHostNotice() {
   if (!isFileProtocol()) return false;
-  setStatus("音源読み込みにはローカル HTTP サーバーが必要です。http://127.0.0.1:8000/ で開いてください。");
+  setStatus("GitHub Pages などの静的ホスティングで開いてください。file:// では音源が読み込めません。 ");
   return true;
 }
 
 // ---------- 起動 ----------
 startBtn.addEventListener("click", async () => {
-  if (requireHttpServer()) return;
+  if (showStaticHostNotice()) return;
   ctx = new (window.AudioContext || window.webkitAudioContext)();
   await ctx.resume();
   overlay.classList.add("hidden");
@@ -61,7 +61,7 @@ async function preloadAll() {
 async function getBuffer(file) {
   if (buffers.has(file)) return buffers.get(file);
   if (isFileProtocol()) {
-    throw new Error("file:// では音源が読めません。HTTP サーバーで開いてください。");
+    throw new Error("file:// では音源が読めません。GitHub Pages などの静的ホスティングで開いてください。 ");
   }
   const res = await fetch(`sounds/${file}`);
   if (!res.ok) throw new Error(`${res.status} ${file}`);
